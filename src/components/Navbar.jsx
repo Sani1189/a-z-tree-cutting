@@ -8,10 +8,15 @@ const Navbar = ({ sections }) => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="fixed w-full bg-blue-200 text-white shadow-md z-10">
+        <div className="fixed w-full bg-gray-700 text-white shadow-md z-10">
             <div className="container mx-auto flex justify-between items-center p-4">
-                <div className="text-2xl font-bold">
-                    <img src="/images/logo.png" alt="Logo" className="h-16" />
+                <div className="flex items-center">
+                    <img src="/images/logo.png" alt="Tree Logo" className="h-16 mr-2" />
+                    <div className="font-bold">
+                        <span className=" text-3xl p-0">AZ TREE</span>
+                        <br />
+                        <span className="text-lg fancy-style">Cutting Service</span>
+                    </div>
                 </div>
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-6">
@@ -21,7 +26,7 @@ const Navbar = ({ sections }) => {
                                 to={section.name.toLowerCase().replace(' ', '-')}
                                 smooth={true}
                                 duration={500}
-                                className="cursor-pointer text-lg hover:text-gray-400 transition duration-300" // Increased font size here
+                                className="cursor-pointer text-lg hover:text-gray-400 transition duration-300"
                             >
                                 {section.name}
                             </Link>
@@ -47,7 +52,7 @@ const Navbar = ({ sections }) => {
                                 smooth={true}
                                 duration={500}
                                 onClick={handleClick}
-                                className="block text-lg hover:text-gray-400 transition duration-300" // Increased font size here
+                                className="block text-lg hover:text-gray-400 transition duration-300"
                             >
                                 {section.name}
                             </Link>

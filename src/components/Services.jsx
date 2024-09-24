@@ -41,9 +41,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className=" py-10 bg-gray-50">
       <div className="container mx-auto text-center px-4 sm:px-6 lg:px-32 xl:px-48">
-        <h2 className="text-4xl font-bold mb-16 text-gray-800">Our Services</h2>
+        <h2 className="text-5xl font-extrabold mb-16 text-gray-800 underline decoration-blue-500 decoration-4">
+          Our Services
+        </h2>
         <div className="space-y-16">
           {services.map((service, index) => (
             <div
@@ -56,13 +58,13 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-auto max-h-[400px] object-cover rounded-lg shadow-xl transition-transform duration-300 hover:scale-105"
+                  className="w-full h-auto max-h-[400px] object-cover rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="w-full md:w-1/2 lg:w-1/2 xl:w-2/3 text-left px-4">
-                <div className="bg-white rounded-lg shadow-xl p-6 transition-transform duration-300 hover:shadow-2xl">
-                  <h3 className="text-3xl font-semibold mb-4 text-blue-900">{service.title}</h3>
-                  <p className="text-gray-700 mb-6">{service.description}</p>
+                <div className="bg-white rounded-lg shadow-2xl p-6 transition-transform duration-300 hover:shadow-2xl border-l-4 border-blue-500">
+                  <h3 className="text-4xl font-bold mb-4 text-blue-900">{service.title}</h3>
+                  <p className="text-lg text-gray-700 mb-6">{service.description}</p>
                 </div>
               </div>
             </div>

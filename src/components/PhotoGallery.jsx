@@ -21,7 +21,7 @@ const PhotoGallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-gray-100 to-gray-200">
+    <section id="gallery" className="py-10 bg-gradient-to-b from-gray-100 to-gray-200">
       <div className="container mx-auto text-center px-6 lg:px-32">
         <h2 className="text-5xl font-extrabold mb-8 text-gray-800 uppercase tracking-widest relative pb-4 border-b-4 border-gradient-to-r from-green-400 to-blue-500 inline-block">
           Our Work

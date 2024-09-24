@@ -18,7 +18,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div className="my-8 px-4 sm:px-6 lg:px-0">
+    <div className="my-8 mt-20 px-4 sm:px-6 lg:px-0">
       <div className="max-w-full mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}

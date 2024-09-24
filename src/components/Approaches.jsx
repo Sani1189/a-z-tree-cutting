@@ -9,25 +9,25 @@ const Approaches = () => {
       title: 'Safety First',
       description: 'We prioritize safety in all our tree cutting and trimming services, ensuring that our team and your property are protected throughout the process.',
       icon: faShieldAlt,
-      iconColor: 'text-red-600', // Red for Safety
+      iconColor: 'text-red-600',
     },
     {
       title: 'Eco-Friendly Practices',
       description: 'We utilize environmentally friendly methods to minimize our impact on the surrounding ecosystem while providing our services.',
       icon: faLeaf,
-      iconColor: 'text-green-600', // Green for Eco-Friendly
+      iconColor: 'text-green-600',
     },
     {
       title: 'Customer Satisfaction',
       description: 'Our focus is on delivering high-quality results that exceed customer expectations, with open communication and responsiveness to your needs.',
       icon: faSmile,
-      iconColor: 'text-yellow-500', // Yellow for Customer Satisfaction
+      iconColor: 'text-yellow-500', 
     },
     {
       title: 'Expertise and Experience',
       description: 'Our team consists of trained professionals with extensive experience in tree care, ensuring that every job is completed with precision and care.',
       icon: faUsers,
-      iconColor: 'text-blue-600', // Blue for Expertise
+      iconColor: 'text-blue-600',
     },
   ];
 
