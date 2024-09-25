@@ -11,11 +11,17 @@ const Navbar = ({ sections }) => {
         <div className="fixed w-full bg-gray-700 text-white shadow-md z-10">
             <div className="container mx-auto flex justify-between items-center p-4">
                 <div className="flex items-center">
-                    <img src="/images/logo.png" alt="Tree Logo" className="h-16 mr-2" />
+                    <img
+                        src="/images/logo.png"
+                        alt="Tree Logo"
+                        className="h-8 md:h-10 lg:h-12 mr-2"
+                    />
                     <div className="font-bold">
-                        <span className=" text-3xl p-0">AZ TREE</span>
+                        <span className="text-xl md:text-2xl lg:text-3xl">AZ TREE</span>
                         <br />
-                        <span className="text-lg fancy-style">Cutting Service</span>
+                        <span className="text-xs md:text-sm lg:text-base fancy-style">
+                            Cutting Service
+                        </span>
                     </div>
                 </div>
                 {/* Desktop Menu */}
@@ -26,7 +32,7 @@ const Navbar = ({ sections }) => {
                                 to={section.name.toLowerCase().replace(' ', '-')}
                                 smooth={true}
                                 duration={500}
-                                className="cursor-pointer text-lg hover:text-gray-400 transition duration-300"
+                                className="cursor-pointer text-sm md:text-base lg:text-lg hover:text-gray-400 transition duration-300"
                             >
                                 {section.name}
                             </Link>
@@ -52,7 +58,7 @@ const Navbar = ({ sections }) => {
                                 smooth={true}
                                 duration={500}
                                 onClick={handleClick}
-                                className="block text-lg hover:text-gray-400 transition duration-300"
+                                className="block text-sm hover:text-gray-400 transition duration-300"
                             >
                                 {section.name}
                             </Link>

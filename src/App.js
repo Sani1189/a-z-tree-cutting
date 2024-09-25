@@ -13,7 +13,7 @@ function App() {
   const [showIcons, setShowIcons] = useState(false);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/0173487624', '_blank');
+    window.open('https://wa.me/60173487624', '_blank');
   };
 
   const handleGmailClick = () => {
@@ -24,7 +24,6 @@ function App() {
     setShowIcons(!showIcons);
   };
 
-  // Define all sections for navigation
   const sections = [
     { name: 'Home', component: <ImageCarousel /> },
     { name: 'About', component: <About /> },
